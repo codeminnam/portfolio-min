@@ -18,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
   body{
     font-family: 'Raleway', 'Noto Sans Korean', 'Apple SD Gothic Neo', 'Noto Sans', 'sans-serif';
     font-size: 14px;
+    height: 100%;
   }
 `;
 
