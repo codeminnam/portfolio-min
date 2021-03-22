@@ -7,7 +7,6 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 library.add(faLinkedinIn, faGithub);
 
 const FooterContainer = styled.footer`
-  position: absolute;
   left: 0;
   right: 0;
   bottom: 0;

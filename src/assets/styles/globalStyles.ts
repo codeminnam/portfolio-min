@@ -10,11 +10,6 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
 
-  html,
-  body {
-    overflow: hidden;
-  }
-
   body{
     font-family: 'Raleway', 'Noto Sans Korean', 'Apple SD Gothic Neo', 'Noto Sans', 'sans-serif';
     font-size: 14px;

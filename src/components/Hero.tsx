@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const HeroSection = styled.section``;
+const HeroSection = styled.section`
+  background-color: #fdded8;
+`;
 const HeroContainer = styled.div`
   padding: 0 30px;
   max-width: 960px;
@@ -21,8 +23,8 @@ const HeroDescContainer = styled.div`
 `;
 
 const NameText = styled.strong`
-  background-color: #e4aa48;
-  font-size: 20px;
+  background-color: #fff;
+  font-size: 30px;
 `;
 
 const FrontText = styled.strong`
@@ -53,7 +55,7 @@ const Hero = () => {
               efficient code. Also, I am passionate with creating the best user
               experiences beyond devices and products. A great team player but
               also make high performance when working individually. I'm
-              currently looking for new opportunities.
+              currently looking for new opportunities overseas.
             </DescText>
           </HeroDescContainer>
         </HeroContent>

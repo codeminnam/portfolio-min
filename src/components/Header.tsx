@@ -32,7 +32,9 @@ const LogoContainer = styled.div`
   }
 `;
 
-const Logo = styled.div``;
+const Logo = styled.div`
+  white-space: nowrap;
+`;
 
 const MenuIcon = styled.div`
   display: none;
@@ -53,7 +55,7 @@ const NavMenu = styled.ul`
   grid-template-columns: repeat(3, auto);
   grid-gap: 10px;
   text-align: center;
-  width: 63vw;
+  width: 70vw;
   margin-top: 30px;
   padding-left: 0;
   justify-content: end;
