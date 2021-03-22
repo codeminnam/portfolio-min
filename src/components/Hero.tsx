@@ -2,18 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HeroSection = styled.section`
-  background: rgb(253, 222, 216);
-  background: linear-gradient(
-    90deg,
-    rgba(253, 222, 216, 1) 35%,
-    rgba(254, 240, 199, 1) 100%
-  );
+  background: #ffffff;
 `;
+
 const HeroContainer = styled.div`
   padding: 0 30px;
   max-width: 960px;
   margin: 0 auto;
 `;
+
 const HeroContent = styled.div`
   display: flex;
   flex-direction: row;
@@ -21,6 +18,7 @@ const HeroContent = styled.div`
   align-items: center;
   padding: 150px 0;
 `;
+
 const HeroNameContainer = styled.div``;
 
 const HeroDescContainer = styled.div`
@@ -35,13 +33,19 @@ const NameText = styled.strong`
 const FrontText = styled.strong`
   display: inline-block;
   margin-bottom: 10px;
-  background-color: #fe7d6e;
-  color: #fff;
 `;
 
 const DescText = styled.p`
   width: 400px;
   margin: 0 auto;
+`;
+
+const DownloadButton = styled.button`
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #fe7d6e;
+  color: #ffffff;
 `;
 
 const Hero = () => {
@@ -64,6 +68,7 @@ const Hero = () => {
               also make high performance when working individually. I'm
               currently looking for new opportunities overseas.
             </DescText>
+            <DownloadButton>DOWNLOAD CV</DownloadButton>
           </HeroDescContainer>
         </HeroContent>
       </HeroContainer>
