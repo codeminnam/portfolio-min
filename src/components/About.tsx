@@ -8,10 +8,9 @@ const AboutSection = styled.section`
   background-color: #ffffff;
 `;
 const AboutContainer = styled.div`
-  padding: 0 30px;
   max-width: 960px;
   margin: 0 auto;
-  padding: 120px 0;
+  padding: 120px 30px;
 `;
 
 const About = () => {

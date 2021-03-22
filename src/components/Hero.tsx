@@ -2,7 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HeroSection = styled.section`
-  background-color: #fdded8;
+  background: rgb(253, 222, 216);
+  background: linear-gradient(
+    90deg,
+    rgba(253, 222, 216, 1) 35%,
+    rgba(254, 240, 199, 1) 100%
+  );
 `;
 const HeroContainer = styled.div`
   padding: 0 30px;
@@ -14,7 +19,7 @@ const HeroContent = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 120px 0;
+  padding: 150px 0;
 `;
 const HeroNameContainer = styled.div``;
 
@@ -24,12 +29,14 @@ const HeroDescContainer = styled.div`
 
 const NameText = styled.strong`
   background-color: #fff;
-  font-size: 30px;
+  font-size: 33px;
 `;
 
 const FrontText = styled.strong`
   display: inline-block;
   margin-bottom: 10px;
+  background-color: #fe7d6e;
+  color: #fff;
 `;
 
 const DescText = styled.p`

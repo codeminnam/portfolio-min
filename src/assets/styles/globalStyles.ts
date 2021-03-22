@@ -15,6 +15,10 @@ const GlobalStyle = createGlobalStyle`
     font-size: 14px;
     height: 100%;
   }
+
+  p{
+    margin: 10px 0;
+  }
 `;
 
 export default GlobalStyle;

@@ -11,7 +11,12 @@ const FooterContainer = styled.footer`
   right: 0;
   bottom: 0;
   padding: 20px 40px;
-  background-color: #f5f5f7;
+  background: rgb(254, 239, 199);
+  background: linear-gradient(
+    90deg,
+    rgba(254, 239, 199, 1) 35%,
+    rgba(213, 199, 254, 1) 100%
+  );
   text-align: center;
 `;
 
