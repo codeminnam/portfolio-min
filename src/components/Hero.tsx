@@ -2,7 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HeroSection = styled.section`
-  background: #ffffff;
+  background: rgb(253, 222, 216);
+  background: linear-gradient(
+    90deg,
+    rgba(253, 222, 216, 1) 35%,
+    rgba(254, 240, 199, 1) 100%
+  );
 `;
 
 const HeroContainer = styled.div`
@@ -31,6 +36,7 @@ const NameText = styled.strong`
 `;
 
 const FrontText = styled.strong`
+  background-color: #fff;
   display: inline-block;
   margin-bottom: 10px;
 `;
