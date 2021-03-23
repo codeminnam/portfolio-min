@@ -15,7 +15,7 @@ const AboutContainer = styled.div`
 
 const About = () => {
   return (
-    <AboutSection>
+    <AboutSection id="about-section">
       <AboutContainer>
         <TechStack />
         <Education />

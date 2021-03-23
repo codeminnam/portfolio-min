@@ -52,7 +52,7 @@ const ImageDesc = styled.p`
 
 const Portfolio = () => {
   return (
-    <PortfolioSection>
+    <PortfolioSection id="portfolio-section">
       <PortfolioContainer>
         <PortfolioContent>
           <PortfolioTitle>Portfolio</PortfolioTitle>

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 library.add(faBars, faTimes);
 
@@ -100,9 +101,39 @@ const Header = () => {
           </MenuIcon>
         </LogoContainer>
         <NavMenu className={clicked ? 'active' : ''}>
-          <NavLinks>Home</NavLinks>
-          <NavLinks>About</NavLinks>
-          <NavLinks>Portfolio</NavLinks>
+          <NavLinks>
+            <Link
+              to="hero-section"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={500}
+            >
+              Home
+            </Link>
+          </NavLinks>
+          <NavLinks>
+            <Link
+              to="about-section"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              About
+            </Link>
+          </NavLinks>
+          <NavLinks>
+            <Link
+              to="portfolio-section"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              Portfolio
+            </Link>
+          </NavLinks>
         </NavMenu>
       </NavigationBar>
     </HeaderContainer>

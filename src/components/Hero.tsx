@@ -56,7 +56,7 @@ const DownloadButton = styled.button`
 
 const Hero = () => {
   return (
-    <HeroSection>
+    <HeroSection id="hero-section">
       <HeroContainer>
         <HeroContent>
           <HeroNameContainer>
