@@ -198,7 +198,7 @@ const Portfolio = () => {
             <ImageContainer>
               <ItemImage src="/images/honyakun/1.png" />
               <ImageDesc>
-                Sign-in Page: At this page you can log in, sign up, and reset
+                Sign-in page: At this page you can log in, sign up, and reset
                 password. Sign up and reset password is done on the modal, and
                 you get email to authenticate once you submit the form.
               </ImageDesc>
@@ -237,7 +237,7 @@ const Portfolio = () => {
             <ImageContainer>
               <ItemImage src="/images/honyakun/documentation.png" />
               <ImageDesc>
-                Documentation - Requirement definition, action definition, page
+                Documentation - requirement definition, action definition, page
                 flow, and so on.
               </ImageDesc>
             </ImageContainer>
