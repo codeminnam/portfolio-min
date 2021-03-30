@@ -7,12 +7,15 @@ import { Link, animateScroll as scroll } from 'react-scroll';
 
 library.add(faBars, faTimes);
 
-const HeaderContainer = styled.header``;
+const HeaderContainer = styled.header`
+  background: #181818;
+`;
 
 const NavigationBar = styled.nav`
   position: relative;
   overflow: hidden;
   display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   min-height: 80px;
   height: 100%;
@@ -35,6 +38,12 @@ const LogoContainer = styled.div`
 
 const Logo = styled.div`
   white-space: nowrap;
+  color: #fff;
+  font-weight: 900;
+
+  strong {
+    color: #ffcbb2;
+  }
 `;
 
 const MenuIcon = styled.div`
@@ -48,38 +57,49 @@ const MenuIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.2rem;
     cursor: pointer;
+    color: #fff;
   }
 `;
 
 const NavMenu = styled.ul`
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-gap: 10px;
+  display: flex;
   text-align: center;
-  width: 70vw;
   margin-top: 30px;
   padding-left: 0;
-  justify-content: end;
+  justify-content: flex-end;
   list-style: none;
 
   @media screen and (max-width: 768px) {
     display: none;
     width: 100%;
     margin-top: unset;
-
     &.active {
       display: block;
     }
   }
 `;
 
-const NavLinks = styled.li`
+const NavLinks = styled.li<{ portfolio?: boolean }>`
   cursor: pointer;
+  color: ${(props) => (props.portfolio ? '#FFDF99' : '#fff')};
+  font-weight: ${(props) => (props.portfolio ? '700' : '400')};
+  padding: 0 10px;
+
   @media screen and (max-width: 768px) {
     text-align: center;
     width: 100%;
     display: table;
     padding: 10px;
+    color: #fff;
+    font-weight: 400;
+  }
+`;
+
+const NavDivider = styled.span`
+  color: #aaa;
+
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `;
 
@@ -89,7 +109,9 @@ const Header = () => {
     <HeaderContainer>
       <NavigationBar>
         <LogoContainer>
-          <Logo>FRONT-END DEVELOPER | MIN</Logo>
+          <Logo>
+            FRONT-END DEVELOPER <strong>MIN</strong>
+          </Logo>
           <MenuIcon
             onClick={() => {
               setClicked(!clicked);
@@ -101,6 +123,17 @@ const Header = () => {
           </MenuIcon>
         </LogoContainer>
         <NavMenu className={clicked ? 'active' : ''}>
+          <NavLinks portfolio={true}>
+            <Link
+              to="portfolio-section"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              PORTFOLIO
+            </Link>
+          </NavLinks>
           <NavLinks>
             <Link
               to="hero-section"
@@ -109,9 +142,10 @@ const Header = () => {
               offset={-80}
               duration={500}
             >
-              Home
+              HOME
             </Link>
           </NavLinks>
+          <NavDivider>|</NavDivider>
           <NavLinks>
             <Link
               to="about-section"
@@ -120,18 +154,7 @@ const Header = () => {
               offset={0}
               duration={500}
             >
-              About
-            </Link>
-          </NavLinks>
-          <NavLinks>
-            <Link
-              to="portfolio-section"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-            >
-              Portfolio
+              ABOUT
             </Link>
           </NavLinks>
         </NavMenu>
